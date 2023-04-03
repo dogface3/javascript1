@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="target"></p>
+<p id="target1"></p>
+<p id="target2"></p>
+<script>
+
+  const number1 = prompt("give number1");
+  const number2 = prompt("give number2");
+  const number3 = prompt("give number3");
+  const number11 = parseInt(number1);
+  const number21 = parseInt(number2);
+  const number31 = parseInt(number3);
+  const summa = number11 + number21 + number31
+  const tulo = number11 * number21 * number31
+  const keskiarvo = summa / 3
+  document.querySelector('#target').innerHTML = summa ;
+  document.querySelector('#target1').innerHTML = tulo ;
+  document.querySelector('#target2').innerHTML = keskiarvo ;
+</script>
+
+</body>
+</html>

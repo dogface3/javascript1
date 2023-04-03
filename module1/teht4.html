@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="target"></p>
+<script>
+  let name = prompt("what your name");
+  let housenmbr =   Math.floor(Math.random() * 4);
+  console.log(housenmbr)
+  if (housenmbr == 0) {
+   document.querySelector('#target').innerHTML = '' + name + ', You are in Ravenclaw!'; }
+  else if (housenmbr == 2) {
+   document.querySelector('#target').innerHTML = '' + name + ', You are in Slytherin!'; }
+  else if (housenmbr == 1) {
+   document.querySelector('#target').innerHTML = '' + name + ', You are in Gryffindor!'; }
+  else {
+   document.querySelector('#target').innerHTML = '' + name + ', You are in Hufflepuff!'; }
+
+</script>
+
+</body>
+</html>

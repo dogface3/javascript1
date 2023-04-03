@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="target"></p>
+<script>
+  let vuosi = prompt("What year do you want to check?");
+  if (vuosi % 100 == 0 && vuosi % 400 == 0) { document.querySelector('#target').innerHTML = + vuosi +
+   ' is a leap year'; }
+  else if (vuosi % 4 == 0) { document.querySelector('#target').innerHTML = + vuosi +
+   ' is a leap year'; }
+ else { document.querySelector('#target').innerHTML = + vuosi +
+   ' is not a leap year'; }
+</script>
+</body>
+</html>

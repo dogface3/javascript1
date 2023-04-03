@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="target"></p>
+<p id="target2"></p>
+<script>
+  const vastaus = confirm("should i calculate squareroot?");
+  if (vastaus == true) { calcsquare() }
+  else { document.querySelector('#target').innerHTML = 'squareroot is not calculated' ; }
+
+  function calcsquare() {
+  const number = prompt("what number should i square?");
+  const number1 = parseInt(number);
+  if (number1 < 0) { document.querySelector('#target2').innerHTML =
+   'The square root of a negative number is not defined' ; }
+  else if (number1 > 0) { tulos = Math.sqrt(number1);
+  document.querySelector('#target').innerHTML = + tulos + '' ; }
+    }
+</script>
+</body>
+</html>

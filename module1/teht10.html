@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="kuinkapaljon"></p>
+<script>
+  var maara = prompt("how many dices to throw?");
+  var haluttu = prompt("what number do you want?");
+
+  function heitanoppaa(maara) {
+  summa1 = 0
+  for (let i = 1; i <= maara; i += 1) {
+  summa = Math.floor((Math.random() * 6) + 1);
+  summa1 = summa1 + summa
+  }
+  }
+  tulos = 0
+  for (let a = 0; a <= 10000; a += 1) {
+  heitanoppaa(maara)
+  if (summa1 == haluttu) { tulos = tulos + 1; }
+  }
+  console.log(tulos)
+  prosentti = tulos / 10000 * 100;
+  console.log(prosentti)
+
+    document.querySelector('#kuinkapaljon').innerHTML = + prosentti + ' prosenttia';
+</script>
+
+</body>
+</html>

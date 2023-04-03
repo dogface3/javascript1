@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="result"></p>
+<script>
+  var num = prompt("give a number");
+  function isprime() {
+  for (var i = 2; i <= (num - 1); i++) {
+    if (num % i == 0) {
+    console.log(i)
+    return document.querySelector('#result').innerHTML = + num + 'is not a prime number' ; }
+
+  }
+  }
+  console.log(isprime())
+  if (isprime() == undefined) {
+  document.querySelector('#result').innerHTML = + num + 'is a prime number' ; }
+</script>
+</body>
+</html>
